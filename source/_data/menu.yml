@@ -1,0 +1,7 @@
+# 此处对应的是主页的顶部栏的“文档”按钮，配置此路径可以通过"/" 加上 我们自己配置的路径进行访问
+# 此处配/docs/的原因是/相当于项目静态路径，docs是下面的文件夹，/docs/就相当于默认访问该文件夹下面的index.html。对应public/docs/index.html
+docs: /docs/
+#community: /community.html
+#api: https://pkg.go.dev/github.com/jinzhu/gorm
+#contribute: /contribute.html
+explain: /explain.html

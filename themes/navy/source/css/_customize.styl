@@ -1,0 +1,290 @@
+#header {
+  #logo {
+    color: white;
+    width: 6rem;
+    line-height: 50px;
+    text-indent: 0;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  #main-nav {
+    a {
+      .fa {
+        padding-right: 0.4em;
+        font-size: 0.9em;
+        opacity: 0.7;
+      }
+      padding: 0 20px 0 10px;
+      opacity: 0.9;
+    }
+
+    #search-input {
+      min-width: 16em;
+    }
+  }
+}
+
+#mobile-nav {
+  a {
+    .fa {
+      padding-right: 0.4em;
+    }
+  }
+}
+
+// #sidebar {
+//   .sidebar-title {
+//     margin-top: 30px;
+//   }
+// }
+
+#banner {
+  #banner-title {
+    color: #fff;
+    opacity: 0.8;
+    font-weight: 600;
+  }
+
+  #banner-share {
+    .github-button, .twitter-follow-button {
+      text-decoration: none;
+      color: color-navy;
+    }
+  }
+}
+
+#content-wrap {
+  .features {
+    width: 88%;
+    margin: 2.5em auto;
+
+    @media mq-mobile {
+      width: 100%;
+    }
+
+    li {
+      line-height: 2em;
+      font-size: 1.2em;
+      color: #666;
+      font-weight: 700;
+
+      .fa {
+        color: color-link;
+        font-size: 1em;
+        margin: 0 0.3em;
+      }
+    }
+  }
+
+  .sponsors-wrapper-pc, .sponsors-wrapper-mobile {
+    padding: 3.5em 0;
+    background: color-sponsors;
+    display: none;
+
+    @media mq-mobile {
+      &.sponsors-wrapper-mobile {
+        display: block;
+      }
+      padding: 0.2em auto;
+    }
+    @media mq-normal {
+      &.sponsors-wrapper-pc {
+        display: block;
+      }
+    }
+
+    .inner {
+      max-width: 1280px;
+      padding: 0 20px;
+      margin: 0 auto;
+    }
+
+    .sponsors {
+      width: 88%;
+      margin: 0 auto 2em;
+
+      @media mq-mobile {
+        width: 100%;
+      }
+
+      object {
+        width: 100%;
+      }
+
+      h1 {
+        margin: 1.5em 0 0.8em;
+        font-size: 2em;
+        color: white;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .backers-list {
+    a {
+      display: inine;
+      padding: 5px;
+      img {
+        border-radius: 50%;
+      }
+    }
+    br {
+      display: none;
+    }
+  }
+
+  .page-not-found {
+    margin: 10em auto 40px auto;
+    width: 600px;
+    text-align: center;
+    min-height: 30em;
+
+    h1 {
+      position: relative;
+      letter-spacing: -1px;
+      line-height: 60px;
+      font-size: 60px;
+      font-weight: 100;
+      margin: 0px 0 50px 0;
+      text-shadow: 0 1px 0 #fff;
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.5);
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+  }
+}
+
+#footer {
+  .inner {
+    width: 88%;
+    margin: 2.5em auto;
+
+    @media mq-mobile {
+      width: 100%;
+    }
+  }
+}
+
+#article-toc {
+  &.fixed {
+    #sidebar-ad-wrapper {
+      margin-top: 10px
+    }
+    .sidebar-title {
+      margin-top: 10px;
+    }
+    .sidebar-title {
+      border-top: 2px solid #5F9AD1;
+    }
+
+    #carbonads {
+      .carbon-poweredby {
+        font-size: 0.5em
+      }
+    }
+  }
+
+  #sidebar-ad-wrapper {
+    margin-top: 30px
+  }
+
+  .sidebar-title {
+    margin-top: 30px;
+  }
+}
+
+
+
+// 右面导航栏
+.m-sd-r {
+    position: fixed;
+    display: block;
+    width: 210px;
+    max-height: 480px;
+    top: 120px;
+    left: 50%;
+    margin-left: 450px;
+    font-size: 14px;
+    z-index: 1;
+    /* background-color: #fff; */
+    overflow-y: auto;
+}
+.m-sd-r .m-sd-cnt {
+    position: relative;
+    font-size: inherit;
+    border-left: 1px solid #d5deed;
+    overflow: visible;
+}
+.m-sd-r li {
+    margin: 0;
+    list-style: none;
+    padding-left: 8%;
+    width: 92%;
+}
+ol {
+    list-style-type: disc;
+}
+.m-sd-r ol {
+    width: 99%;
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+}
+.f-sel {
+  color:#0d6ff4;
+}
+.m-sd-cnt li.f-sel {color:#0d6ff4;}
+.m-sd-cnt li.f-sel::before {content:"";display:inline-block;width:12px;height:6px;margin-left:-16px;margin-right:10px;background:#0d6ff4;vertical-align:middle;}
+// .m-sd-cnt .toc-cnt-list li.f-sel::before {position:absolute;content:"";display:inline-block;width:12px;height:6px;margin-top:10px;margin-left:-22px;margin-right:10px;background:#0d6ff4;vertical-align:middle;}
+// .m-sd-cnt .toc-cnt-sublist li.f-sel::before {position:absolute;content:"";display:inline-block;width:12px;height:6px;margin-top:5px;margin-left:-40px;margin-right:10px;background:#0d6ff4;vertical-align:middle;}
+
+.m-sd-cnt li {
+    position: relative;
+}
+// 右侧菜单不同的h标签的缩进大小
+.m-sd-r h2, .m-sd-r h3 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    cursor: pointer;
+}
+.m-sd-r h2 {
+    line-height: 2.4;
+}
+.m-sd-r h3 {
+    width: inherit;
+    margin-left: 6px;
+    line-height: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.m-sd-cnt .toc-cnt-list h3 {
+    font-size: 14px;
+}
+#toccnt .f-toggle {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 4px;
+    width: 8px;
+    height: 12px;
+    margin: 8px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+#toccnt .f-toggle {
+    background-position: -4px 0;
+}
+#toccnt .f-toggle.f-toggle-minus {
+    background-image: url(../../img/blue_up.png);
+}
+#toccnt .f-toggle.f-toggle-plus {
+    background-image: url(../../img/blue_down.png);
+}

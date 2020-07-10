@@ -1,0 +1,241 @@
+.m-sd // 左侧菜单栏最外层样式
+  display: block
+  position: fixed
+  padding-top: 2px
+  width: 240px
+  bottom: 1px
+  left: 50%
+  top: 76px
+  margin-left: -600px
+  overflow: hidden
+  overflow-y: auto
+  color: #333
+  font-size: 14px
+  background-color: #f5f7fa
+  z-index: 1
+.m-sd .m-sd-row {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.m-sd .m-sd-row .sd-link { // a链接的样式
+    display: inline-block;
+    width: inherit;
+    // &.current
+    //   color: black
+    // &:hover
+    //   // color: black
+}
+.m-sd .m-sd-head {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.m-sd h2.m-sd-head { // 左侧菜单栏起始标题的样式
+    padding-top: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #222;
+    text-indent: 1em;
+    border-top: none;
+}
+.m-sd .m-sd-head { // 菜单里还有其他多个选项
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+// 选中变颜色的
+.m-sd .m-sd-row.active, .m-sd .m-sd-head.active {
+    background-color: #e7edf7;
+    color: #0d6ff4;
+}
+
+.m-sd .m-sd-row:hover, .m-sd .m-sd-head:hover {
+    color: #0d6ff4;
+}
+// li标签
+.m-sd .m-sd-unit .m-sd-row {
+    border-top: none;
+      border-top-width: initial;
+      border-top-style: none;
+      border-top-color: initial;
+}
+.m-sd .m-sd-unit.hide .m-sd-row {
+    display: none;
+}
+.m-sd li.m-sd-row {
+    list-style: none;
+      list-style-position: initial;
+      list-style-image: initial;
+      list-style-type: none;
+}
+.m-sd .m-sd-row, .m-sd .m-sd-head {
+    border-top: 1px solid #eff0f2;
+}
+.m-sd .m-sd-row, .m-sd .m-sd-head {
+}
+.m-sd li.m-sd-row {
+    list-style: none;
+      list-style-position: initial;
+      list-style-image: initial;
+      list-style-type: none;
+}
+
+// ul中span中的标题样式
+.m-sd .sd-link, .m-sd .sd-tab {
+    text-indent: 1em;
+}
+.m-sd .m-sd-head .sd-tab {
+    display: inline-block;
+    width: inherit;
+}
+.m-sd .m-sd-unit .sd-tab {
+    text-indent: 1em;
+}
+
+// a链接样式
+a {
+    color: inherit;
+    word-break: break-all;
+}
+a:link {
+    color: inherit;
+    text-decoration: none;
+}
+.m-sd .m-sd-row .sd-link {
+    display: inline-block;
+    width: inherit;
+}
+.m-sd .m-sd-unit .sd-link {
+    text-indent: 2em;
+}
+
+// 左侧菜单栏箭头图标
+.m-sd .m-sd-unit.hide {}
+.m-sd .m-sd-unit.show {}
+.m-sd .m-sd-head .sd-icon {
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+.m-sd .m-sd-unit.show .sd-icon {
+    background-image: url(../../img/up.png);
+}
+.m-sd .m-sd-unit.hide .sd-icon {
+    background-image: url(../../img/down.png);
+}
+
+
+.m-sd .m-sd-unit.hide .m-sd-unit {
+    display: none;
+}
+ul ul ul {
+    list-style-type: square;
+}
+ul ul {
+    list-style-type: circle;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    // padding-inline-start: 40px;
+}
+.m-sd li.m-sd-row {
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+}
+.m-sd .m-sd-unit.hide > .m-sd-head {
+}
+.m-sd .m-sd-unit .m-sd-unit .m-sd-head {
+    border-top: none;
+}
+ul>li {
+    list-style-image: url(i/list-style1.png);
+    list-style-type: square;
+}
+li {
+    margin: 5px 0;
+    list-style: none;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+ul ul {
+    list-style-type: circle;
+}
+ul {
+    list-style-type: disc;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.new_sidebar
+  // position: fixed;
+  width: 200px
+
+
+.sidebar-title
+  margin-top: 40px
+  padding: 10px 0
+  width: 200px
+  border-top: 1px solid color-border
+  line-height: 1
+  background-color: #DDDDDD
+
+ .sidebar-title
+   margin-top: 40px
+   padding: 10px 0
+   font-family: font-title
+   font-weight: bold
+   color: color-link
+   display: inline-block
+   border-top: 1px solid color-border
+   line-height: 1
+
+.sidebar-link
+  display: block
+  text-decoration: none
+  padding: 7px 0
+  line-height: 1
+  position: relative
+  width: 100%
+  text-overflow: ellipsis
+  overflow: hidden
+  white-space: nowrap
+  color: inherit;
+  // &.current
+  //   color: black
+  // &:hover
+  //   color: black

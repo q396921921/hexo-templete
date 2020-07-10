@@ -1,0 +1,23 @@
+# 所有包含子级的菜单
+childrens:
+  people: "people"
+  boy: "boy"
+  girl: "girl"
+  animal: "animal"
+  dog: "dog"
+docs:
+# 这个的默认页必须是index.html,因为要默认跳转此页面
+# 自己随便写点什么把
+  0index: /index.html
+  people: # 相当于一级目录
+    boy: # 二级目录
+      little_boy: /little_boy.html # 在二级目录中的具体展示页面
+      big_boy: /big_boy.html
+      old_boy: /old_boy.html
+    girl: # 二级目录
+      little_girl: /little_girl.html
+  animal: # 这里同样可以加新的一级目录
+    dog:
+      big_dog: /animal1/dog/big_dog.html
+
+

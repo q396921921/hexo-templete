@@ -1,0 +1,452 @@
+  iframe {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    border: none;
+  }
+
+  .m-sd {
+    display: block;
+    position: fixed;
+    padding-top: 2px;
+    width: 240px;
+    bottom: 1px;
+    left: 50%;
+    top: 76px;
+    margin-left: -600px;
+    overflow: hidden;
+    overflow-y: auto;
+    color: #333;
+    font-size: 14px;
+    background-color: #f5f7fa;
+    z-index: 1;
+  }
+
+  .m-sd .m-sd-head {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+
+  .m-sd .m-sd-head .sd-icon {
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+
+  .m-sd .m-sd-head .sd-tab {
+    display: inline-block;
+    width: inherit;
+}
+
+  .m-sd h2.m-sd-head {
+    padding-top: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    color:#222;
+    text-indent: 1em;
+    border-top: none;
+}
+
+  .m-sd h3 {
+    font-size: inherit;
+}
+
+  .m-sd li.m-sd-row {
+    list-style: none;
+}
+
+  .m-sd .m-sd-row {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+
+  .m-sd .m-sd-row .sd-link {
+    display: inline-block;
+    width: inherit;
+}
+
+  .m-sd .m-sd-row, .m-sd .m-sd-head {}
+
+  .m-sd .m-sd-row.active, .m-sd .m-sd-head.active {
+    background-color: #e7edf7;
+    color: #0d6ff4;
+}
+
+  .m-sd .m-sd-row:hover, .m-sd .m-sd-head:hover {
+    color: #0d6ff4;
+}
+
+  .m-sd .sd-link, .m-sd .sd-tab {
+    text-indent: 1em;
+}
+
+  .m-sd .m-sd-unit .m-sd-row {
+    border-top: none;
+}
+
+  .m-sd .m-sd-unit .sd-tab {
+    text-indent: 1em;
+}
+
+  .m-sd .m-sd-unit .sd-link {
+    text-indent: 2em;
+}
+
+  .m-sd .m-sd-unit .m-sd-unit .m-sd-head {
+    border-top: none;
+}
+
+  .m-sd .m-sd-unit .m-sd-unit .m-sd-row {
+    color: #666;
+    list-style: disc
+    /*background-color: $color_bg_s;*/
+}
+
+  .m-sd .m-sd-unit .m-sd-unit .m-sd-row:hover {
+    color: #0d6ff4;
+}
+
+  .m-sd .m-sd-unit .m-sd-unit .m-sd-row.active {
+    color: #0d6ff4;
+}
+
+  .m-sd .m-sd-unit .m-sd-unit .m-sd-row.active .sd-link::before {
+    background: #0d6ff4;
+}
+
+  .m-sd .m-sd-unit .m-sd-unit .sd-tab {
+    text-indent: 2em;
+}
+
+  .m-sd .m-sd-unit .m-sd-unit .sd-link {
+    text-indent: 3em
+}
+
+  .m-sd .m-sd-unit .m-sd-unit .sd-link::before {
+    content: "";
+    background: #666;
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    margin-left: -4px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+  .m-sd .m-sd-unit.hide .m-sd-row {
+    display: none;
+}
+
+  .m-sd .m-sd-unit.hide .m-sd-unit {
+    display: none;
+}
+
+  .m-sd .m-sd-unit.show > .m-sd-head {
+    /*color: $color_ft_light;*/
+    /*background-color: $color_bg_hover;*/
+}
+
+
+  .m-sd .m-sd-unit.hide > .m-sd-head {
+    /*background-color: $color_bg_m;*/
+}
+
+  .m-sd .m-sd-row, .m-sd .m-sd-head{
+    border-top: 1px solid #eff0f2;
+}
+
+  .m-cnt {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    margin-left: -330px;
+    min-height: 90%;
+    padding-bottom: 284px;
+    width: 750px;
+    font-size: 14px;
+    line-height: 24px;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+  }
+
+  .m-cnt h1{
+    margin:20px auto 16px auto;
+    color:#333;
+    background: #fff;
+    line-height: 40px;
+    height:50px;
+    font-size: 28px;
+    border-bottom:1px solid #ddd;
+}
+
+  .m-cnt h2 {
+    color: #0d6ff4;
+    font-size: 22px;
+    margin-top: 28px;
+}
+
+  .m-cnt h3{
+    font-size: 18px;
+    margin-top:20px;
+}
+
+  .m-cnt h4{
+    margin-top: 16px;
+}
+
+  .m-cnt a {
+    color: #659AD0;
+}
+
+  .m-cnt p {
+    line-height: 30px;
+    font-size: 14px;
+    text-indent: 0em;
+}
+
+  .m-cnt ul, .m-cnt ol {
+    margin:8px 8px;
+    font-size: 14px;
+}
+
+  .m-cnt ul li, .m-cnt ol li{
+    margin-left: 1em;
+}
+
+  .m-cnt table{
+    max-width:800px;
+    border-spacing: 0;
+    border-color: #eee;
+    font-size: 13px;
+    //margin:10px 2em;
+    word-break: break-all;
+}
+
+  .m-cnt table th, .m-cnt table td{
+    padding: 4px 8px;
+    overflow: hidden;
+    word-break: break-word;
+    min-width: 3em;
+}
+
+  .m-cnt pre {
+    position: relative;
+    width: auto;
+}
+
+  .m-cnt pre .u-copy-btn{
+    position:absolute;
+    min-width:20px;
+    line-height:20px;
+    height: 20px;
+    top:20px;
+    right: 18px;
+    color: #bf3907;
+    font-size: 12px;
+    /*background-image: url("i/copy-btn.png");*/
+    z-index: 1;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px #fff
+}
+
+  .m-cnt pre .u-copy-btn:hover {
+    color: #932c06;
+}
+
+  .m-cnt pre code{
+    padding:15px 35px 15px 15px;
+    width:92%;
+    max-width:800px;
+    /* background:#f5f5ff; */
+    border:1px solid #DCDCEA;
+    border-radius: 5px;
+}
+
+  .m-cnt .mermaid {
+    position: relative;
+    margin: 10px 0 20px;
+    width: 90%;
+}
+
+  .m-sd-r {
+    position: fixed;
+    display: block;
+    width: 210px;
+    max-height: 480px;
+    top: 120px;
+    left:50%;
+    margin-left: 450px;
+    font-size: 14px;
+    z-index: 1;
+    /*background-color: #fff;*/
+    overflow-y: auto;
+  }
+
+  .m-sd-r .m-sd-cnt {
+    position: relative;
+    font-size: inherit;
+    border-left: 1px solid #d5deed;
+    overflow: visible;
+}
+
+  .m-sd-r h2, .m-sd-r h3 {
+    display: inline-block;
+    margin:0;
+    padding:0;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+  .m-sd-r h2 {
+    line-height: 2.4;
+}
+
+  .m-sd-r h3 {
+    width: inherit;
+    margin-left: 6px;
+    line-height: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+
+  .m-sd-r ul {
+    width:99%;
+    margin: 0;
+    padding: 0;
+    word-break:break-all;
+}
+
+  .m-sd-r li {
+    margin:0;
+    list-style: none;
+    padding-left: 8%;
+    width: 92%;
+}
+
+  .m-sd-r.u-fixed {
+    position: fixed;
+    top: 30px;
+}
+
+  .m-sd-r.u-absolute {
+    position: absolute;
+    height: auto;
+    bottom: -80px;
+}
+
+  .breadcrumb {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+  }
+
+  .breadcrumb a {
+    color: #000;
+}
+
+  #change-theme {
+    position: fixed;
+    display: block;
+    width: 210px;
+    top: 80px;
+    left:50%;
+    margin-left: 450px;
+    font-size: 14px;
+    z-index: 1;
+  }
+
+  #change-theme span, #change-theme select {
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    line-height: 30px;
+}
+  .related {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 204px;
+    margin-top: 50px;
+    overflow: hidden;
+    background-color: #f5f7fa;
+    padding: 15px 10px;
+    border-top: 2px solid rgba(0,0,0,0.09);
+  }
+  .related .related-doc, .related .related-product {
+    width: 48%;
+    float: left;
+}
+  .related .related-doc h3, .related .related-product h3 {
+    color: #333;
+}
+  .related .related-doc li, .related .related-product li {
+    list-style: none;
+    list-style-type: circle
+}
+  .related .related-doc a, .related .related-product a {
+    color: #0d6ff4;
+}
+  @media screen and (max-width: 1200px) {
+    .m-sd {
+      left: 0;
+      margin-left:0;
+    }
+    .m-cnt {
+      left: 270px;
+      margin-left:0;
+    }
+  }
+
+
+// 中间部分表格内容
+table {
+    width: 100%; /*表格宽度*/
+    max-width: 65em; /*表格最大宽度，避免表格过宽*/
+    border: 1px solid #dedede; /*表格外边框设置*/
+    margin: 15px auto; /*外边距*/
+    border-collapse: collapse; /*使用单一线条的边框*/
+    empty-cells: show; /*单元格无内容依旧绘制边框*/
+}
+table th,
+table td {
+  height: 35px; /*统一每一行的默认高度*/
+  border: 1px solid #dedede; /*内部边框样式*/
+  text-align: center !important;
+  padding: 0 10px; /*内边距*/
+}
+table th {
+    font-weight: bold; /*加粗*/
+    text-align: center !important; /*内容居中，加上 !important 避免被 Markdown 样式覆盖*/
+    background: rgba(158,188,226,0.2); /*背景色*/
+}
+table tbody tr:nth-child(2n) {
+    background: rgba(158,188,226,0.12); 
+}
+table tr:hover {
+    background: #efefef; 
+}
+table th {
+    white-space: nowrap; /*表头内容强制在一行显示*/
+}
+table td:nth-child(1) {
+    white-space: nowrap; 
+}
+td pre {
+  text-align: left
+}

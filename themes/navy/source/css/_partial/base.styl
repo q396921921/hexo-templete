@@ -1,0 +1,82 @@
+global-reset()
+
+*, *:before, *:after
+  box-sizing: inherit
+
+button
+input[type="reset"]
+input[type="button"]
+input[type="submit"]
+  &::-moz-focus-inner
+    padding: 0
+    margin: 0
+    border: 0
+
+input, button, select
+  margin: 0
+  padding: 0
+  border: 0
+
+// html, body
+//   @media screen
+//     height: 100%
+//     // overflow: hidden
+
+.wrapper1
+  clearfix()
+  @media screen
+    // max-width: max-width
+    margin: 0 auto
+  background-color: #1C2B41
+
+.wrapper
+  clearfix()
+  @media screen
+    max-width: max-width
+    margin: 0 auto
+
+.inner
+  clearfix()
+  @media screen
+    padding: 0 gutter-width
+
+#content-wrap
+  background: color-content
+  border-top: 1px solid darken(color-navy, 5%)
+  border-bottom: 1px solid darken(color-navy, 5%)
+  margin: -1px 0
+
+
+// 新增
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: #ebeef3;
+    -webkit-border-radius: 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: block;
+    margin: 8px;
+}
+body {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    min-width: 1000px;
+    background: #fff;
+    color: #666;
+    font-family: 'HanHei SC', PingHei, 'PingFang SC', 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
+}

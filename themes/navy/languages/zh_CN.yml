@@ -1,0 +1,37 @@
+---
+menu:
+  # home: <i class="fa fa-home"></i>首页
+  # docs: <i class="fa fa-book"></i>文档
+  # api: <i class="fa fa-cogs"></i>API
+  # github: <i class="fa fa-github"></i>Github
+  # community: <i class="fa fa-slack"></i>社区
+  # contribute: <i class="fa fa-rocket"></i>贡献
+  # explain: <i class="fa fa-rocket"></i>说明
+  # search: 搜索文档...
+  home: 首页
+  docs: 文档
+  explain: 说明
+  search: 搜索文档...
+index:
+  get_started: 开始使用
+page:
+  contents: 内容
+  back_to_top: 回到顶部
+  improve: 改进此文档
+  prev: 上一页
+  next: 下一页
+  last_updated: "最后更新于 %s"
+sidebar:
+  docs: #目录开头加1，文件开头加0
+    0index: 主页必须在
+    people: 人类
+    boy: 男孩
+    girl: 女孩
+    # 小红绳文档相关
+    little_boy: 小男孩
+    big_boy: 大男孩
+    old_boy: 老男人
+    little_girl: 小女孩
+    animal: 动物
+    dog: 狗
+    big_dog: 大狗
