@@ -1,31 +1,30 @@
 zh_CN:
   name: 简体中文
   disqus_lang: zh
-# en:
-#   name: English
-#   disqus_lang: en
-
-#de_DE:
-#  name: Deutsch
-#  disqus_lang: de
-#es_ES:
-#  name: Español
-#  disqus_lang: es
-#id_ID:
-#  name: bahasa Indonesia
-#  disqus_lang: id
-#it_IT:
-#  name: Italiano
-#  disqus_lang: it
-#ja_JP:
-#  name: 日本語
-#  disqus_lang: jp
-#ru_RU:
-#  name: Русский
-#  disqus_lang: ru
-#fr_FR:
-#  name: French
-#  disqus_lang: fr
-#ko_KR:
-#  name: 한국어
-#  disqus_lang: ko
+en:
+  name: English
+  disqus_lang: en
+de_DE:
+ name: Deutsch
+ disqus_lang: de
+es_ES:
+ name: Español
+ disqus_lang: es
+id_ID:
+ name: bahasa Indonesia
+ disqus_lang: id
+it_IT:
+ name: Italiano
+ disqus_lang: it
+ja_JP:
+ name: 日本語
+ disqus_lang: jp
+ru_RU:
+ name: Русский
+ disqus_lang: ru
+fr_FR:
+ name: French
+ disqus_lang: fr
+ko_KR:
+ name: 한국어
+ disqus_lang: ko

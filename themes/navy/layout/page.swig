@@ -7,7 +7,8 @@
 </div>
 <div id="catalogue" class="m-sd-r">
   <div id="toccnt" class="m-sd-cnt">
-    {{ toc(page.content, {list_number: false}) }}
+    <!-- 此处是 -->
+    {{ toc(page.content, {list_number: true}) }}
   </div>
 </div>
 
