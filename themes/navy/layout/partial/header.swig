@@ -1,7 +1,7 @@
 <header id="header" class="m-hd">
   <div class="m-hd-body-wrap">
     <div class="m-hd-body">
-      {# logo #}
+      {# logo, 标题栏左上角的 主页 标题 #}
       <span class="m-hd-logo">
         <a href="{{ url_for_lang('') }}" id="logo">
           <span class="u-logo">

@@ -42,4 +42,4 @@ layout: page
 
 ## 完善本页面
 
-请在[本页](https://github.com/jinzhu/gorm.io/edit/master/pages/community.md)更改，并提交 Pull Request
+请在[本页](https://github.com/jinzhu/gorm.io/)更改，并提交 Pull Request

@@ -203,12 +203,14 @@ hexo.extend.helper.register('header_menu', function (className) {
     return result
 })
 
+// 将当前页面的路径与config中配置的url拼接为一个可以直接访问的链接（多语言）
 hexo.extend.helper.register('canonical_url', function (lang) {
     var path = this.page.canonical_path
     if (lang && lang !== 'zh_CN') path = lang + '/' + path
     return this.config.url + '/' + path
 })
 
+// 将当前的路径与语言拼接成为一个针对当前语言的主页链接（默认中文）
 hexo.extend.helper.register('url_for_lang', function (path) {
     var lang = this.page.lang
     var url = this.url_for(path)
@@ -289,7 +291,6 @@ hexo.extend.helper.register('disqus_lang', function () {
 hexo.extend.helper.register('hexo_version', function () {
     return this.env.version
 })
-
 // 此方法对应的是文档导航栏。
 // 原理是将点击之后的路径与树状菜单对象结构，做比对。通过html页面名（value）即：/xx/yy/zz.html拿到对应的key
 // 然后通过递归，一级一级向上查找，直到树状结构的根。然后通过self.__(prefix + val)【val是我们需要的值】，得到对应的菜单名字

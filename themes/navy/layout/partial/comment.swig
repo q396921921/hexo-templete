@@ -6,6 +6,7 @@
 <script>
 var disqus_config = function () {
 this.page.url = '{{ url }}';
+alert('{{ url }}')
 this.page.identifier = '{{ url }}';
 this.language = '{{ disqus_lang() }}';
 };

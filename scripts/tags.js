@@ -17,3 +17,8 @@ hexo.extend.tag.register('note', function(args, content) {
 
   return result;
 }, true);
+
+hexo.extend.tag.register('test', function(args, content) {
+  console.log(args, content);
+  return content;
+})

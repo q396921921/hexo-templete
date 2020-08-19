@@ -3,18 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: DZ
-subtitle: ''
+title: 主页name
+subtitle: '标题栏介绍'
 description: '主要存储自己学习项目或者新知识之后的makedown文档'
 keywords:
 author: duzhuo
+# 默认语言
 language: zh_CN
 timezone: ''
 apiMenuTitle: '各种自己学习整理文档'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://github.com
+url: http://127.0.0.1:4000
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -104,6 +105,8 @@ theme: navy
 ## Docs: https://hexo.io/docs/deployment.html
 #deploy:
 #  type: ''
+
+github: q396921921/hexo-templete
 
 deploy:
   type: git

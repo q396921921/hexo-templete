@@ -3,15 +3,16 @@
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ config.title }} - {{ config.subtitle }}</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Canonical links -->
-  <link rel="canonical" href="{{ url }}">
+  <!-- Canonical links 不知道有啥用，反正没有被用到 -->
+  <!-- <link rel="canonical" href="{{ url }}"> -->
   <!-- Alternative links -->
+  <!-- 只是用来展示该文档所有不同语言的当前页面对应的链接,可以去除 -->
   {% if page.layout == 'page' or page.layout == 'index' %}
     {% for lang in site.data.languages %}
       <link rel="alternative" hreflang="{{ loop.key }}" href="{{ canonical_url(loop.key) }}">
     {% endfor %}
   {% endif %}
-  <!-- Icon -->
+  <!-- Icon, 在win上删除这些链接并未有和影响 -->
   <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('icon/apple-touch-icon-57x57.png') }}">
   <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('icon/apple-touch-icon-114x114.png') }}">
   <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('icon/apple-touch-icon-72x72.png') }}">
@@ -27,21 +28,16 @@
   <link rel="icon" type="image/png" href="{{ url_for('icon/favicon-32x32.png') }}" sizes="32x32">
   <meta name="msapplication-TileColor" content="#2f83cd">
   <meta name="msapplication-TileImage" content="{{ url_for('icon/mstile-144x144.png') }}">
+  <!-- 用于标记hexo版本,无其他实际功能 -->
   <meta name="generator" content="Hexo {{ hexo_version() }}">
   <!-- CSS -->
-  <!-- build:css build/css/navy.css -->
+  <!-- build:css build/css/navy.css 载入总的css文件 -->
   {{ css('css/navy') }}
   <!-- endbuild -->
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   <!-- RSS -->
+  <!-- 一知半解：xml是基础的可扩展标记语言 1.atom资源可以方便被其他站点、方便各种客户端引用 2.atom是构筑在xml之上的网站资源联合发布协议 -->
   {{ feed_tag('atom.xml') }}
-  <!-- Open Graph -->
-  {{ open_graph({
-    fb_admins: config.fb_admins,
-    twitter_site: config.twitter
-  }) }}
-  <!-- Google Tag Manager -->
-  {{ partial('google_tag_manager') }}
 </head>

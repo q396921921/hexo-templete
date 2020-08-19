@@ -1,0 +1,37 @@
+---
+menu:
+  # home: <i class="fa fa-home"></i>首页
+  # docs: <i class="fa fa-book"></i>文档
+  # api: <i class="fa fa-cogs"></i>API
+  # github: <i class="fa fa-github"></i>Github
+  # community: <i class="fa fa-slack"></i>社区
+  # contribute: <i class="fa fa-rocket"></i>贡献
+  # explain: <i class="fa fa-rocket"></i>说明
+  # search: 搜索文档...
+  home: index
+  docs: doc
+  explain: explain
+  search: Search...
+index:
+  get_started: startUse
+page:
+  contents: comment
+  back_to_top: backTop
+  improve: updateDoc
+  prev: prev
+  next: next
+  last_updated: "last update %s"
+sidebar:
+  docs: #目录开头加1，文件开头加0
+    0index: indexMust
+    people: people
+    boy: boy
+    girl: girl
+    # 小红绳文档相关
+    little_boy: little_boy
+    big_boy: big_boy
+    old_boy: old_boy
+    little_girl: little_girl
+    animal: animal
+    dog: dog
+    big_dog: big_dog
