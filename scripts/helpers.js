@@ -10,6 +10,7 @@ var cheerio = require('cheerio')
 var lunr = require('lunr')
 const { format } = require('path')
 
+// 顶部标题栏【文档， 】
 var localizedPath = ['docs', 'community', 'contribute']
 
 function startsWith(str, start) {
@@ -59,6 +60,7 @@ hexo.extend.helper.register('page_nav', function () {
     return result
 })
 
+// 左侧菜单导航栏
 hexo.extend.helper.register('doc_sidebar', function (className) {
     var type = this.page.canonical_path.split('/')[0]
     var sidebar = this.site.data.sidebar[type]
@@ -165,6 +167,8 @@ function eachSidebar(menu, self, prefix, className, path, childrens, tier, width
     return result
 }
 
+// 顶部标题栏以及点击跳转链接【文档，说明。。。】
+// 关键：
 hexo.extend.helper.register('header_menu', function (className) {
     var menu = this.site.data.menu
     var result = ''
@@ -173,6 +177,7 @@ hexo.extend.helper.register('header_menu', function (className) {
     var isChinese = lang === 'zh_CN'
 
     _.each(menu, function (path, title) {
+        // 动态配置该url链接（多语言）
         if (!isChinese && ~localizedPath.indexOf(title)) path = lang + path
         const obj = {
             lang,
@@ -182,6 +187,7 @@ hexo.extend.helper.register('header_menu', function (className) {
             localizedPath,
             title,
         }
+        // 如果menu中配置的链接为一个网址，就跳转到一个新的页面【target="_blank"】
         if (path.startsWith('http://') || path.startsWith('https://')) {
             result +=
                 '<span class="m-hd-nav-tab"><a href="' +
@@ -266,6 +272,7 @@ hexo.extend.helper.register('canonical_path_for_nav', function () {
     return ''
 })
 
+// 传入en, zh_CN等获得在languages.yml中对应的 name 显示名
 hexo.extend.helper.register('lang_name', function (lang) {
 
     var data = this.site.data.languages[lang]
@@ -276,6 +283,7 @@ hexo.extend.helper.register('lang_name', function (lang) {
     return data.name || data
 })
 
+// 
 hexo.extend.helper.register('disqus_lang', function () {
 
     var lang = this.page.lang

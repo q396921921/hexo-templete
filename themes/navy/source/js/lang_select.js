@@ -1,3 +1,4 @@
+// 监听语言改变，跳转对应语言的页面
 (function () {
   'use strict'
   
@@ -11,6 +12,4 @@
   }
 
   document.getElementById('lang-select').addEventListener('change', changeLang);
-  document.getElementById('mobile-lang-select').addEventListener('change', changeLang)
-
 })()
