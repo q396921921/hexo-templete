@@ -49,29 +49,37 @@ logo-size = 50px
 
 #search-input-wrap
   display: none
+  position: absolute
+  right: 0
+  top: 0.5em
+  // @media mq-normal
+  //   display: block
   padding-left: 6px
   padding-bottom: 8px
   border-bottom: 1px solid color-gray
   &.on
-    display: inline-block
+    display: block
 
 #search-input-icon
   color: #fff
   padding-right: 0.5em
-  display: inline-block
+  display: lock
   opacity: 0.7
 
 #search-input
   background: none
   font-size: inherit
   font-family: font-title
-  color: #fff
+  color: red
   outline: none
   -webkit-appearance: none
 
+// 此处是顶部标题栏选择语言的css
 #lang-select-wrap
   display: none
-  position: relative
+  position: absolute
+  right: 0
+  top: 0.5em
   @media mq-normal
     display: block
 
