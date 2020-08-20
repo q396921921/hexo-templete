@@ -13,27 +13,35 @@
       {# 顶部标题菜单 #}
       <span class="m-hd-nav">
         {{ header_menu('main-nav') }}
-        <div id="search-input-wrap">
+      </span>
+      <!-- 搜索栏 -->
+      <!--
+      <div class="m-hd-search">
+        <div class="u-box">
           <div id="search-input-icon">
             <i class="fa fa-search"></i>
           </div>
           <input type="search" id="search-input" placeholder="{{ __('menu.search') }}">
         </div>
-      </span>
-      </h1>
+      </div>
+      -->
+      <!--
+      <div id="search-input-wrap">
+          <div id="search-input-icon">
+            <i class="fa fa-search"></i>
+          </div>
+          <input type="search" id="search-input" placeholder="{{ __('menu.search') }}">
+        </div>
+        -->
+      <!-- 顶部语言选择栏 -->
+      <div id="lang-select-wrap">
+        <label id="lang-select-label"><i class="fa fa-globe"></i><span>{{ lang_name(page.lang) }}</span></label>
+        <select id="lang-select" data-canonical="{{ canonical_path_for_nav() }}">
+          {% for lang in site.data.languages %}
+            <option value="{{ loop.key }}"{% if page.lang === loop.key %} selected{% endif %}>{{ lang_name(loop.key) }}</option>
+          {% endfor %}
+        </select>
+      </div>
     </div>
-{#    <div id="lang-select-wrap">#}
-{#      <label id="lang-select-label"><i class="fa fa-globe"></i><span>{{ lang_name(page.lang) }}</span></label>#}
-{#      <select id="lang-select" data-canonical="{{ canonical_path_for_nav() }}">#}
-{#        {% for lang in site.data.languages %}#}
-{#          <option value="{{ loop.key }}"{% if page.lang === loop.key %} selected{% endif %}>{{ lang_name(loop.key) }}</option>#}
-{#        {% endfor %}#}
-{#      </select>#}
-{#    </div>#}
-    <a id="mobile-nav-toggle">
-      <span class="mobile-nav-toggle-bar"></span>
-      <span class="mobile-nav-toggle-bar"></span>
-      <span class="mobile-nav-toggle-bar"></span>
-    </a>
   </div>
 </header>

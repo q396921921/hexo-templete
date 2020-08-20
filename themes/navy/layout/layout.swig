@@ -7,16 +7,12 @@
 <html lang="{{ page.lang }}">{{ partial('partial/head') }}
 <body>
   {{ partial('partial/header') }}
+  <!-- 如果当前页面的布局layout是page，就展示左侧菜单栏 -->
   {% if page.layout === 'page' %}
     {{ partial('partial/sidebar') }}
   {% endif %}
   {{ body }}
-  {# <div id="container">
-    {{ partial('partial/footer') }}
-  </div>
-  #}
-  <div id="mobile-nav-dimmer"></div>
-  {{ partial('partial/mobile_nav') }}
+  <!-- 加载多个js功能文件 -->
   {{ partial('partial/after_footer') }}
 </body>
 </html>
