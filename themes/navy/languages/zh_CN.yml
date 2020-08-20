@@ -1,5 +1,6 @@
 ---
 menu:
+  # 这些是标题名字前面带上logo 
   # home: <i class="fa fa-home"></i>首页
   # docs: <i class="fa fa-book"></i>文档
   # api: <i class="fa fa-cogs"></i>API
@@ -7,7 +8,6 @@ menu:
   # community: <i class="fa fa-slack"></i>社区
   # contribute: <i class="fa fa-rocket"></i>贡献
   # explain: <i class="fa fa-rocket"></i>说明
-  # search: 搜索文档...
   home: 首页
   docs: 文档
   explain: 说明

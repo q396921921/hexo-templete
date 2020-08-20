@@ -7,7 +7,6 @@ menu:
   # community: <i class="fa fa-slack"></i>社区
   # contribute: <i class="fa fa-rocket"></i>贡献
   # explain: <i class="fa fa-rocket"></i>说明
-  # search: 搜索文档...
   home: index
   docs: doc
   explain: explain

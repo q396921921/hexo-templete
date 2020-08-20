@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "build": "hexo generate",
+    "buildAll": "hexo generate --config config/_config.yml && hexo generate --config config/config.en.yml",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server -p 4000",
-    "dev": "hexo server --debug -p 4000"
+    "dev": "hexo server --debug -p 4000 --config config/_config.yml"
   },
   "hexo": {
     "version": "4.2.1"
