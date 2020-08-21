@@ -1,10 +1,6 @@
 
 (function() {
   'use strict';
-  // document.getElementsByClassName("new_sidebar")[0].style.height = document.body.clientHeight + "px"
-  var body = document.getElementsByTagName('body')[0];
-
-  
   // 第一次cookie没有值时就把默认值先都赋值进去
   var doc_cook = getCookie("doc_cook")
   var titleObj = {};

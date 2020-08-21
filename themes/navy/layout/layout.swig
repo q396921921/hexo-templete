@@ -11,6 +11,7 @@
   {% if page.layout === 'page' %}
     {{ partial('partial/sidebar') }}
   {% endif %}
+  <!-- 中间md文档html页面内容（对应page） -->
   {{ body }}
   <!-- 加载多个js功能文件 -->
   {{ partial('partial/after_footer') }}

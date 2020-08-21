@@ -283,18 +283,18 @@ hexo.extend.helper.register('lang_name', function (lang) {
     return data.name || data
 })
 
-// 
-hexo.extend.helper.register('disqus_lang', function () {
+// 无用方法
+// hexo.extend.helper.register('disqus_lang', function () {
 
-    var lang = this.page.lang
-    var data = this.site.data.languages[lang]
+//     var lang = this.page.lang
+//     var data = this.site.data.languages[lang]
 
-    if (data == null) {
-        return lang
-    }
+//     if (data == null) {
+//         return lang
+//     }
 
-    return data.disqus_lang || lang
-})
+//     return data.disqus_lang || lang
+// })
 
 hexo.extend.helper.register('hexo_version', function () {
     return this.env.version
